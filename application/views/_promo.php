@@ -2,11 +2,16 @@
     <div class="wrp">
         <div class="w-1 row jsfd">
             <div class="w-8-12 no-mrgn text promo-popup__content">
-                <div class="promo__title promo__title--big promo__title--upper">получи</div>
-                <div class="promo__title promo__title--big promo__title--upper">скидку</div>
-                <div class="promo__title promo__title--discount">-20%</div>
-                <div class="promo__title">на первый</div>
-                <div class="promo__title">визит</div>
+                <?php if (time() < 1765756801): ?>
+                    <div class="promo__title promo__title--big promo__title--upper">получи</div>
+                    <div class="promo__title promo__title--big promo__title--upper">скидку</div>
+                    <div class="promo__title promo__title--discount">-20%</div>
+                    <div class="promo__title">на первый</div>
+                    <div class="promo__title">визит</div>
+                <?php else: ?>
+                    <div class="promo__title--small">Запишитесь в салон красоты онлайн сейчас.</div>
+                    <p>Оставьте свои контактные данные, мы быстро перезвоним и уточним детали записи.</p>
+                <?php endif ?>
                 <div class="promo__title promo__title--big" style="display:none;">сейчас</div>
                 <div class="promo-popup__timer timer" style="display: none">
                   <span class="timer-section minute-1">0</span>

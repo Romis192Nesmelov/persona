@@ -9052,6 +9052,10 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
   width: 250px !important
 }
 
+.promo-popup__content p {
+  margin-bottom: 15px;
+}
+
 .promo-popup .lead-form__policy {
   display: none
 }
@@ -9075,6 +9079,12 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
 .promo__title--discount {
   font-size: 45px;
   font-weight: 500
+}
+
+.promo__title--small {
+  font-size: 25px;
+  margin-bottom: 15px;
+  line-height: 30px;
 }
 
 .timer {
