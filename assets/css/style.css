@@ -10268,7 +10268,58 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
   opacity: 0
 }
 
-.promo-app__popup::before {
+.promo-app__popup.high-season {
+  background-image: url("../imgs/popup-high-season-image.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 100%;
+}
+
+.promo-app__popup.high-season .promo-app__popup_left-block {
+  width: 85%;
+}
+
+.promo-app__popup.high-season .promo-app__promo-ctr {
+  width: 70%;
+  font-size: 20px;
+}
+
+.promo-app__popup.high-season .promo-app__promo-ctr .promo-app__promo-ctr--big {
+  text-transform: none !important;
+  line-height: 29px;
+  letter-spacing: 0;
+}
+
+.promo-app__popup.high-season .promo-app__promo-ctr .promo-app__promo-ctr--big .underline {
+  border-bottom: 5px solid #CCFF66;
+  padding-bottom: 3px;
+}
+
+.promo-app__popup.high-season .promo-app__promo-ctr:first-child {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.promo-app__popup.high-season .promo-app__footer {
+  width: 40%;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 30px;
+}
+
+.promo-app__popup.high-season .promo-app__button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.promo-app__popup.high-season .promo-app__close {
+  background-image: url(../imgs/cross-salad.svg);
+}
+
+.promo-app__popup::before:not(.high-season) {
   content: "";
   position: absolute;
   height: 100%;
@@ -10412,7 +10463,7 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
     padding: 15px;
   }
 
-  .promo-app__popup::before {
+  .promo-app__popup::before:not(.high-season) {
     content: "";
     position: absolute;
     height: 46%;
@@ -10463,6 +10514,24 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
     font-weight: 500;
     text-align: center;
     max-width: 100%;
+  }
+
+  .promo-app__popup.high-season {
+    background-position: calc(100% + 60px) bottom;
+  }
+
+  .promo-app__popup.high-season .promo-app__popup_left-block {
+    width: 60%;
+  }
+
+  .promo-app__popup.high-season .promo-app__promo-ctr {
+    text-align: left !important;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .promo-app__popup.high-season .promo-app__promo-ctr .promo-app__promo-ctr--big {
+    font-size: 24px;
   }
 
   .promo-app__promo-ctr--big {
@@ -10570,11 +10639,35 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
 }
 
 @media only screen and (max-width: 767px) {
+  .promo-app__popup.high-season .promo-app__popup_left-block {
+    width: 75%;
+  }
+
+  .promo-app__popup.high-season .promo-app__promo-ctr {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .promo-app__popup.high-season .promo-app__promo-ctr .promo-app__promo-ctr--big {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
   .franchise__list-block {
     flex-direction: column;
   }
 
   .franchise__list-block > div {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .promo-app__popup.high-season .promo-app__popup_left-block {
+    width: 85%;
+  }
+
+  .promo-app__popup.high-season {
+    background-position: calc(100% + 120px) bottom;
   }
 }
