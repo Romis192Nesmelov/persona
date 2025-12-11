@@ -3,7 +3,7 @@
         <h1 class="franchise__title">Франшиза</h1>
 
         <div class="franchise-img-block">
-            <img src="<?= base_url() ?>/assets/imgs/franchise/how_to_open.jpg" alt="Как открыть успешный салон красоты при поддержке проверенной сети">
+            <img src="/assets/imgs/franchise/how_to_open.jpg" alt="Как открыть успешный салон красоты при поддержке проверенной сети">
         </div>
 
         <h2 class="franchise__head">Как открыть успешный салон красоты при поддержке проверенной сети</h2>
@@ -11,7 +11,7 @@
         <p class="franchise__paragraph">«ПЕРСОНА» – это не просто сеть салонов – это сообщество, где каждый партнёр получает комплексную поддержку на всех этапах – от подписания договора до ежедневной работы с клиентами.</p>
 
         <div class="franchise-img-block">
-            <img src="<?= base_url() ?>/assets/imgs/franchise/team.jpg">
+            <img src="/assets/imgs/franchise/team.jpg">
         </div>
 
         <div class="franchise__list-block">
@@ -32,7 +32,7 @@
         </div>
 
         <div class="franchise-img-block">
-            <img src="<?= base_url() ?>/assets/imgs/franchise/how_does_the_launch_proceed.jpg" alt="Как проходит запуск?">
+            <img src="/assets/imgs/franchise/how_does_the_launch_proceed.jpg" alt="Как проходит запуск?">
         </div>
 
         <h2 class="franchise__head">Как проходит запуск?</h2>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="franchise-img-block">
-            <img src="<?= base_url() ?>/assets/imgs/franchise/who_is_this_franchise_for.jpg" alt="Для кого эта франшиза?">
+            <img src="/assets/imgs/franchise/who_is_this_franchise_for.jpg" alt="Для кого эта франшиза?">
         </div>
 
         <h2 class="franchise__head">Для кого эта франшиза?</h2>
