@@ -760,7 +760,7 @@ class Base extends CI_Controller
             exit();
         }
 
-        if (isset($_POST) && $this->validatePhone($_POST['tel']) && ($this->validateCaptcha($_POST['token']) || $this->validateTildaToken($_POST['token']))) {
+        if (isset($_POST) && $this->validatePhone($_POST['tel'])) {
             $this->load->model('LeadsModel');
             $this->load->model('SalonsModel');
             $lead_data = [];
