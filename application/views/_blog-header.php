@@ -8,8 +8,10 @@
                 <div class="call__container">
                     <?php $this->load->view('_call_button', array('useDefPhone' => false)); ?>
                 </div>
-                <div class="booking__container">
+                <div class="record__container">
                     <?php $this->load->view('_record_button'); ?>
+                </div>
+                <div class="booking__container">
                     <?php $this->load->view('_online_record_button', array('useDropDown' => true)); ?>
                 </div>
 <!--                --><?php //if (false) : ?>

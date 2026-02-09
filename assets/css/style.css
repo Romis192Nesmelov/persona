@@ -4568,7 +4568,7 @@ header #Bar .info {
   align-items: center
 }
 
-header #Bar .info > * {
+header #Bar .info > *:not(.record__container) {
   margin-right: 25px
 }
 
@@ -6790,6 +6790,7 @@ footer .logo {
     display: none !important
   }
 
+  .record__container span,
   .booking__container span {
     white-space: nowrap;
   }
@@ -6991,7 +6992,7 @@ footer .logo {
   display: none
 }
 
-.instagram__container, .call__container, .booking__container {
+.instagram__container, .call__container, .record__container, .booking__container {
   display: flex;
   position: relative;
   z-index: 1000

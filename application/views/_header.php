@@ -11,8 +11,10 @@
                     <?php $this->load->view('_choose_a_salon'); ?>
                 </div>
                 <?php if (!isset($hide_online_link) || !$hide_online_link) : ?>
-                    <div class="booking__container">
+                    <div class="record__container">
                         <?php $this->load->view('_record_button'); ?>
+                    </div>
+                    <div class="booking__container">
                         <?php $this->load->view('_online_record_button', array('useDropDown' => false)); ?>
                     </div>
                 <? endif; ?>
