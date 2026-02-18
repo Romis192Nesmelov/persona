@@ -14,10 +14,10 @@
             <!-- Левая часть: текст и кнопки -->
             <div class="voucher-banner__left" style="position: relative; z-index: 2; padding: 60px 0 60px 60px;">
                 <div class="voucher-banner__badge" style="font-size: 54px; color: #FFD100; font-weight: 700; margin-bottom: 24px;">
-                    NEW!
+                    НОВИНКА!
                 </div>
                 <div class="voucher-banner__title" style="font-size: 52px; color: #fff; font-weight: 700; margin-bottom: 40px; line-height: 1.15;">
-                    Покупайте BEAUTY Депозит<br>
+                    Прекрасный депозит<br>
                     с кэшбэком до <span style="color: #FFD100;">20.000₽</span>
                 </div>
                 <div class="voucher-banner__buttons" style="display: flex; gap: 40px;">
