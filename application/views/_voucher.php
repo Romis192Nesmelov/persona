@@ -17,7 +17,7 @@
                     НОВИНКА!
                 </div>
                 <div class="voucher-banner__title" style="font-size: 52px; color: #fff; font-weight: 700; margin-bottom: 40px; line-height: 1.15;">
-                    Прекрасный депозит<br>
+                    Персональный депозит<br>
                     с кэшбэком до <span style="color: #FFD100;">20.000₽</span>
                 </div>
                 <div class="voucher-banner__buttons" style="display: flex; gap: 40px;">
