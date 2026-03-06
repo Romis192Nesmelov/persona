@@ -18,7 +18,7 @@
                 </div>
                 <div class="voucher-banner__title" style="font-size: 52px; color: #fff; font-weight: 700; margin-bottom: 40px; line-height: 1.15;">
                     Персональный депозит<br>
-                    с кэшбэком до <span style="color: #FFD100;">20.000₽</span>
+                    с кешбэком до <span style="color: #FFD100;">20.000₽</span>
                 </div>
                 <div class="voucher-banner__buttons" style="display: flex; gap: 40px;">
     <a href="#" class="voucher-btn-outline" popup-trigger="voucher-info"
