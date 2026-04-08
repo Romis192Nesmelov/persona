@@ -3,16 +3,14 @@
 <footer>
     <div>
         <div class="w-6-12 lft-txt" style="width: 100%;">
-            <img width="225" height="58" class="logo bot-mrgn-ult"
-                 src="<?php echo base_url(); ?>media/general/default/logo-g.svg" alt="ПЕРСОНА">
+            <img width="225" height="58" class="logo bot-mrgn-ult" src="<?php echo base_url(); ?>media/general/default/logo-g.svg" alt="ПЕРСОНА">
             <p>© <?= date('Y') ?>, Персона</p>
             <p>Юридическая информация:</p>
-            <p>ИП Цыганкова Елена Валентиновна</p>
+            <p>Правообладатель товарного знака: ИП Цыганкова Елена Валентиновна</p>
             <p>ИНН 772803624638 / ОГРНИП 316774600064111</p>
             <p>125466, Москва, Новокуркинское шоссе, 31</p>
-            <p>При возникновении любых технических сложностей сообщите нам по
-                почте <?php echo isset($salon) && array_key_exists('mail', $salon) ? '<a class="txt" href="mailto:' . $salon['mail'] . '">' . $salon['mail'] . '</a>' : ''; ?>
-            </p>
+            <p>Салоны, представленные на Сайте, являются самостоятельными юридическими лицами и несут исключительную ответственность за свою деятельность, осуществляемую в рамках договора франшизы.</p>
+            <p>Если вы являетесь правообладателем материалов, размещённых на сайте (включая изображения и фотографии), и считаете, что их использование нарушает ваши права, или возражаете против их использования, пожалуйста, свяжитесь с нами: <?php echo isset($salon) && array_key_exists('mail', $salon) ? '<a class="txt" href="mailto:' . $salon['mail'] . '">' . $salon['mail'] . '</a>' : ''; ?></p>
         </div>
         <div class="w-6-12 rght-txt">
             <?php if (isset($salon) && array_key_exists('tel', $salon) && $salon['tel'] != '') : ?>
