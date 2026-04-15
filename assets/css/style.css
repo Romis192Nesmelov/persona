@@ -10547,7 +10547,7 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
   }
 
   .promo-app__popup.technical-problems .block {
-    width: 100%;
+    width: 100% !important;
   }
 
   .promo-app__popup.technical-problems .block.right {
