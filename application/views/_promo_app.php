@@ -4,7 +4,7 @@
         <div class="block left">
             <div class="promo-app__promo-ctr--big">Технические неполадки<br>со связью!</div>
             <div class="promo-app__promo-ctr--small-green">Мы скоро все починим</div>
-            <div class="promo-app__promo-footer">Записывайтесь<br>через <span>онлайн-запись</span><br>или <span>приложение</span><img src="/assets/imgs/arrow.svg"></div>
+            <div class="promo-app__promo-footer">Записывайтесь<br>через <span>онлайн-запись</span><br>или по телефону:<br><span><a href="tel:+79252217554" target="_blank">+7(925)221-75-54</a></span><img src="/assets/imgs/arrow.svg"></div>
         </div>
         <div class="block right">
             <a class="record-button" href="https://sycret.ru/service/ob/#/?apikey=03aju5sw05xz25cj&utm_source=seo" target="_blank">Записаться</a>
@@ -33,7 +33,7 @@
 <!--                <svg width="17" height="5" viewBox="0 0 17 5" fill="none" xmlns="http://www.w3.org/2000/svg">-->
 <!--                    <path d="M0.000857895 4.99939V0.0352958H1.48502L2.69379 1.95723L3.90256 0.0352958H5.38672V4.99939H3.98921V2.148L2.69293 4.09095H2.66376L1.37521 2.16229V4.99939H0H0.000857895ZM5.87916 4.99939L8.03676 0H9.39052L11.5481 4.99939H10.0425L9.67362 4.1128H7.71848L7.35645 4.99939H5.87916ZM8.13113 3.04216H9.26784L8.70335 1.63117L8.13113 3.04216ZM11.5267 4.99939L13.2639 2.4749L11.5987 0.0352958H13.2133L14.1107 1.43284L15.0157 0.0352958H16.5943L14.9291 2.46062L16.6663 4.99939H15.0518L14.0815 3.50268L13.1043 4.99939H11.5258H11.5267Z" fill="#E31E24"/>-->
 <!--                </svg>-->
-<!--                <div>Оплачивайте до  <b>5О%</b> бонусами</div>-->
+<!--                <div>Оплачивайте до <b>5О%</b> бонусами</div>-->
 <!--            </li>-->
 <!--            <li class="promo-app__feature">-->
 <!--                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">-->

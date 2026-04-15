@@ -10314,10 +10314,11 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
 }
 
 .promo-app__popup.technical-problems .block.left img {
-  width: 130px;
+  width: 140px;
   position: absolute;
-  bottom: 80px;
-  margin-left: 55px;
+  transform: rotate(10deg);
+  bottom: 95px;
+  margin-left: 80px;
 }
 
 .promo-app__popup.technical-problems .block.left .promo-app__promo-footer {
@@ -10556,9 +10557,9 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
   }
 
   .promo-app__popup.technical-problems .block.left img {
-    width: 100px;
-    transform: rotate(130deg);
-    margin-left: -25px;
+    width: 120px;
+    transform: rotate(120deg);
+    margin-left: 0;
   }
 
   .promo-app__popup::before:not(.high-season) {
