@@ -10286,6 +10286,68 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
   background-size: auto 100%;
 }
 
+.promo-app__popup.technical-problems {
+  background-color: black;
+  color: white;
+  background-image: url("../imgs/handset_to_left.png");
+}
+
+.promo-app__popup.technical-problems > div {
+  width: 100%;
+  display: flex;
+}
+
+.promo-app__popup.technical-problems .block {
+  width: 50%;
+}
+
+.promo-app__popup.technical-problems .block.left .promo-app__promo-ctr--big {
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.promo-app__popup.technical-problems .block.left .promo-app__promo-ctr--small-green {
+  color: #CCFF66;
+  font-size: 18px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.promo-app__popup.technical-problems .block.left img {
+  width: 130px;
+  position: absolute;
+  bottom: 80px;
+  margin-left: 55px;
+}
+
+.promo-app__popup.technical-problems .block.left .promo-app__promo-footer {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.promo-app__popup.technical-problems .block.left .promo-app__promo-footer span {
+  color: #CCFF66;
+}
+
+.promo-app__popup.technical-problems .block.right {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.promo-app__popup.technical-problems .block.right .record-button {
+  padding: 15px 25px;
+  border-radius: 26px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+  background: #CCFF66;;
+}
+
 .promo-app__popup.high-season .promo-app__popup_left-block {
   width: 85%;
 }
@@ -10472,6 +10534,31 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
     max-height: 95vh;
     width: 90vw;
     padding: 15px;
+  }
+
+  .promo-app__popup.technical-problems {
+    background-image: url("../imgs/handset_to_right.png");
+    background-position: right !important;
+  }
+
+  .promo-app__popup.technical-problems > div {
+    display: block;
+  }
+
+  .promo-app__popup.technical-problems .block {
+    width: 100%;
+  }
+
+  .promo-app__popup.technical-problems .block.right {
+    display: block;
+    padding: 40px 0;
+    text-align: left;
+  }
+
+  .promo-app__popup.technical-problems .block.left img {
+    width: 100px;
+    transform: rotate(130deg);
+    margin-left: -25px;
   }
 
   .promo-app__popup::before:not(.high-season) {
