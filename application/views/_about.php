@@ -70,9 +70,9 @@ if (!isset($salon_slug)) {
                             </svg>
                             <p>Всегда <strong>комфортно, приветливая</strong> атмосфера</p>
                         </a>
-                    <div class="w-3-12">
-                        <a class="btn" popup-trigger="about-lead">Записаться</a>
-                    </div>
+<!--                    <div class="w-3-12">-->
+<!--                        <a class="btn" popup-trigger="about-lead">Записаться</a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

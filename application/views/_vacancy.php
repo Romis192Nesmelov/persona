@@ -34,7 +34,7 @@
             </ul>
             <div class="vacancies__text"><?= $settings['subtitle'] ?></div>
             <a class="vacancies__tel" href="tel:<?= $settings['tel'] ?>"><?= $settings['tel'] ?></a>
-            <button style="margin-top: 20px" popup-trigger="vacancy-lead" class="vacancy__lead-btn" type="button">Откликнуться</button>
+<!--            <button style="margin-top: 20px" popup-trigger="vacancy-lead" class="vacancy__lead-btn" type="button">Откликнуться</button>-->
         </div>
     </section>
 <?php endif; ?>

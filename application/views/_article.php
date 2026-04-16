@@ -27,9 +27,9 @@
                     </div>
                 <?php endif; ?>
             </div>
-            <div class="w-3-12">
-                <a class="btn" popup-trigger="about-lead">Записаться</a>
-            </div>
+<!--            <div class="w-3-12">-->
+<!--                <a class="btn" popup-trigger="about-lead">Записаться</a>-->
+<!--            </div>-->
         </div>
     </section>
     <?php if (!empty($similar_articles)) : ?>

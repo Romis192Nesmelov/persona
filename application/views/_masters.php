@@ -33,10 +33,10 @@
                                     <?php if (!empty($master['description'])) : ?>
                                         <p class="master__description">
                                             <?= $master['description'] ?>
-                                            <span class="master__lead-btn-container">
-                                                <a data-master="<?= $master['name'] ?>" data-salon="<?= $master['salon'] ?>"
-                                                   class="btn master__lead-btn" popup-trigger="masters-lead">Записаться</a>
-                                            </span>
+<!--                                            <span class="master__lead-btn-container">-->
+<!--                                                <a data-master="--><?php //= $master['name'] ?><!--" data-salon="--><?php //= $master['salon'] ?><!--"-->
+<!--                                                   class="btn master__lead-btn" popup-trigger="masters-lead">Записаться</a>-->
+<!--                                            </span>-->
                                         </p>
                                     <?php endif; ?>
                                 </div>

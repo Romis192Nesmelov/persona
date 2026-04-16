@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <?php echo isset($salon_block) && array_key_exists('slogan', $salon_block) ? '<h3 class="bg-heading bot-mrgn-med"><span>' . $salon_block['slogan'] . '</span></h3>' : ''; ?>
-                    <?php $this->load->view('_form', array('slug_salon' => $salon['slug'], 'tel' => $salon['tel'], 'horizontal' => true, 'heading' => 'Записаться на услуги on-line:', 'master' => false)); ?>
+<!--                    --><?php //$this->load->view('_form', array('slug_salon' => $salon['slug'], 'tel' => $salon['tel'], 'horizontal' => true, 'heading' => 'Записаться на услуги on-line:', 'master' => false)); ?>
                 </div>
             </div>
         </div>
