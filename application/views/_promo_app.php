@@ -1,23 +1,23 @@
 <div class="promo-app__overlay"></div>
-<div class="promo-app__popup high-season technical-problems">
-    <div>
-        <div class="block left">
-            <div class="promo-app__promo-ctr--big">Технические неполадки<br>со связью!</div>
-            <div class="promo-app__promo-ctr--small-green">Мы скоро все починим</div>
-            <div class="promo-app__promo-footer">Записывайтесь<br>через <span>онлайн-запись</span><br>или по телефону:<br><span><a href="tel:+79252217554" target="_blank">+7(925)221-75-54</a></span><img src="/assets/imgs/arrow.svg"></div>
-        </div>
-        <div class="block right">
-            <a class="record-button" href="https://sycret.ru/service/ob/#/?apikey=03aju5sw05xz25cj&utm_source=seo" target="_blank">Записаться</a>
-        </div>
+<div class="promo-app__popup high-season">
+<!--    <div>-->
+<!--        <div class="block left">-->
+<!--            <div class="promo-app__promo-ctr--big">Технические неполадки<br>со связью!</div>-->
+<!--            <div class="promo-app__promo-ctr--small-green">Мы скоро все починим</div>-->
+<!--            <div class="promo-app__promo-footer">Записывайтесь<br>через <span>онлайн-запись</span><br>или по телефону:<br><span><a href="tel:+79252217554" target="_blank">+7(925)221-75-54</a></span><img src="/assets/imgs/arrow.svg"></div>-->
+<!--        </div>-->
+<!--        <div class="block right">-->
+<!--            <a class="record-button" href="https://sycret.ru/service/ob/#/?apikey=03aju5sw05xz25cj&utm_source=seo" target="_blank">Записаться</a>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="promo-app__popup_left-block">
+        <div class="promo-app__promo-ctr"><span class="promo-app__promo-ctr--big">Не нашли подходящее время в онлайн-записи?<br><span class="underline">Не переживайте!</span></span></div>
+        <div class="promo-app__promo-ctr"><span class="promo-app__promo-ctr--big">Свяжитесь с нами <br>по телефону,</span>и мы скорректируем расписание, подберем удобное время или добавим вас в лист ожидания.</div>
     </div>
-<!--    <div class="promo-app__popup_left-block">-->
-<!--        <div class="promo-app__promo-ctr"><span class="promo-app__promo-ctr--big">Не нашли подходящее время в онлайн-записи?<br><span class="underline">Не переживайте!</span></span></div>-->
-<!--        <div class="promo-app__promo-ctr"><span class="promo-app__promo-ctr--big">Свяжитесь с нами <br>по телефону,</span>и мы скорректируем расписание, подберем удобное время или добавим вас в лист ожидания.</div>-->
-<!--    </div>-->
-<!--    <div class="promo-app__footer">-->
-<!--        Мы всегда рядом, чтобы сделать ваш визит комфортным!-->
+    <div class="promo-app__footer">
+        Мы всегда рядом, чтобы сделать ваш визит комфортным!
         <a class="promo-app__button"></a>
-<!--    </div>-->
+    </div>
     <button type="button" class="promo-app__close"></button>
 
 <!--    <div class="promo-app__promo-ctr"><span class="promo-app__promo-ctr--big">Присоединяйтесь</span>к программе лояльности</div>-->
