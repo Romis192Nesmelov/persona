@@ -10737,6 +10737,21 @@ p.instagram__links-item, p.call__links-item, p.booking__links-item {
   text-decoration: underline;
 }
 
+.offers__container h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.offers__container p {
+  margin-bottom: 10px;
+}
+
+.offers__container ul {
+  padding-inline-start: 40px;
+}
+
 @media only screen and (max-width: 767px) {
   .promo-app__popup.high-season .promo-app__popup_left-block {
     width: 75%;

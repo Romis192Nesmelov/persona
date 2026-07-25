@@ -218,8 +218,17 @@ class Base extends CI_Controller
     private function getAgreements(){
         $privacy_block = $this->BlocksModel->getBlockData('privacy-policy');
         $personal_data_block = $this->BlocksModel->getBlockData('personal-data-agreement');
+        $personal_data_policy_block = $this->BlocksModel->getBlockData('personal-data-policy');
         $cookies_block = $this->BlocksModel->getBlockData('cookie-agreement');
-        return ['privacy_block' => $privacy_block, 'personal_data_block' => $personal_data_block, 'cookies_block' => $cookies_block];
+        $public_offer_block = $this->BlocksModel->getBlockData('public-offer');
+
+        return [
+            'privacy_block' => $privacy_block,
+            'personal_data_block' => $personal_data_block,
+            'personal_data_policy_block' => $personal_data_policy_block,
+            'cookies_block' => $cookies_block,
+            'public_offer_block' => $public_offer_block
+        ];
     }
 
     public function index()
@@ -453,6 +462,44 @@ class Base extends CI_Controller
         $this->show('_blog-header', ['salons' => $this->salons, 'utm' => $this->getUtm(), 'hide_online_link' => false]);
 
         $this->show('policy', $agreements['personal_data_block']);
+
+        $this->show('_footer', $agreements);
+        $this->show('_cookies');
+        $this->show('_promo_app');
+        $this->show('_promo');
+        $this->show('_booking', ['active' => $this->getWidget() == 'online']);
+        $this->show('_corona');
+        $this->show('_foot');
+    }
+
+    public function viewPersonalPolicy()
+    {
+        $salon = $this->SalonsModel->getSalon('default');
+        $agreements = $this->getAgreements();
+
+        $this->show('_head', ['amp_link' => $this->getAmpLink(), 'seo' => $this->SeoModel->getAgreementSeo($agreements['personal_data_block']), 'assets' => 'main', 'salon' => $salon]);
+        $this->show('_blog-header', ['salons' => $this->salons, 'utm' => $this->getUtm(), 'hide_online_link' => false]);
+
+        $this->show('policy', $agreements['personal_data_policy_block']);
+
+        $this->show('_footer', $agreements);
+        $this->show('_cookies');
+        $this->show('_promo_app');
+        $this->show('_promo');
+        $this->show('_booking', ['active' => $this->getWidget() == 'online']);
+        $this->show('_corona');
+        $this->show('_foot');
+    }
+
+    public function viewPublicOffer()
+    {
+        $salon = $this->SalonsModel->getSalon('default');
+        $agreements = $this->getAgreements();
+
+        $this->show('_head', ['amp_link' => $this->getAmpLink(), 'seo' => $this->SeoModel->getAgreementSeo($agreements['personal_data_block']), 'assets' => 'main', 'salon' => $salon]);
+        $this->show('_blog-header', ['salons' => $this->salons, 'utm' => $this->getUtm(), 'hide_online_link' => false]);
+
+        $this->show('policy', $agreements['public_offer_block']);
 
         $this->show('_footer', $agreements);
         $this->show('_cookies');

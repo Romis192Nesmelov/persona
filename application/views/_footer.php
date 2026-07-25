@@ -19,9 +19,10 @@
                 </h3>
             <?php endif; ?>
             <p><a class="txt" href="<?php echo base_url(); ?>policy">Политика конфиденциальности</a></p>
-            <p><a class="txt" href="<?php echo base_url(); ?>personal-data">Согласие на обработку персональных
-                    данных</a></p>
-            <p><a class="txt" href="<?php echo base_url(); ?>cookie">Используемые cookie</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>personal-data">Согласие на обработку персональных данных</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>public-offer">Публична оферта</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>personal-data-policy">Политика в отношении<br>обработки персональных данных</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>cookie">Политика использования файлов cookie</a></p>
             <p style="margin-top: 8px">
                 <a target="_blank" href="https://apps.apple.com/us/app/%D1%81%D0%B0%D0%BB%D0%BE%D0%BD-%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0/id6467411376">
                     <img width="150" height="45" alt="Persona at app store" src="<?php echo base_url(); ?>assets/imgs/app_store.webp">
