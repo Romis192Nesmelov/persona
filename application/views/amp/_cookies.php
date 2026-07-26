@@ -7,12 +7,8 @@
         }</script>
     <div id="consentDialog" class="cookies-footer">
         <div class="cookies-footer__container">
-            <div class="cookies-footer__text">Мы используем cookie. Это позволяет нам анализировать взаимодействие
-                посетителей с сайтом и делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с
-                <a on="tap:privacy_agreement.open" style="border-bottom: 1px dotted; cursor: pointer">политикой конфиденциальности</a>
-                и
-                <a on="tap:personaldata_agreement.open" style="border-bottom: 1px dotted; cursor: pointer">принимаете соглашение на обработку
-                    персональных данных</a>
+            <div class="cookies-footer__text">
+                Мы используем cookies. Это позволяет нам анализировать взаимодействие посетителей с сайтом и делать его лучше. Продолжая пользоваться сайтом, вы даете согласие на <a href="/cookie" target="_blank" style="border-bottom: 1px dotted; cursor: pointer">обработку данных cookies</a>.
             </div>
             <button on="tap:cookieConsent.accept" class="cookies-footer__btn" type="button">Принять</button>
         </div>
