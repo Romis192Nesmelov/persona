@@ -763,19 +763,47 @@ class Base extends CI_Controller
         return '*Заявка с persona-city.ru*' . $message;
     }
 
-    private function telegramMessage($message, $chat_id)
+    private function telegramMessage($message, $chat_id): bool
     {
-        $token = '684302573:AAH_f9OFhbPzOXGeBG7YxoLOLmKMPQsh9E4';
+        if (empty($chat_id)) {
+            error_log('[TELEGRAM] SKIP: empty chat_id');
+            return false;
+        }
+        $payload = json_encode([
+            'bot' => 'promo',
+            'chat_id' => $chat_id,
+            'text' => $message,
+            'parse_mode' => 'Markdown'
+        ]);
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://api.telegram.org/bot' . $token . '/sendMessage');
+        curl_setopt($ch, CURLOPT_URL, 'https://31.57.61.236:8443/send');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, 'chat_id=' . $chat_id . '&text=' . urlencode($message) . '&parse_mode=Markdown');
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_exec($ch);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/json',
+            'X-Api-Key: 86ef0f2114f18856b37e9cde64f7ded8'
+        ]);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $error = curl_error($ch);
         curl_close($ch);
+
+        if ($error) {
+            error_log('[TELEGRAM] CURL ERROR: ' . $error);
+            return false;
+        }
+        if ($httpCode !== 200) {
+            error_log('[TELEGRAM] HTTP ' . $httpCode . ': ' . $response);
+            return false;
+        }
+        error_log('[TELEGRAM] OK: chat_id=' . $chat_id);
+        return true;
     }
 
     private function validateCaptcha($token) {
