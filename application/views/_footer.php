@@ -20,10 +20,10 @@
                                                                       href="tel:<?php echo $salon['tel']; ?>"><?php echo $salon['tel']; ?></a>
                 </h3>
             <?php endif; ?>
-            <p><a class="txt" href="<?php echo base_url(); ?>policy">Политика конфиденциальности</a></p>
-            <p><a class="txt" href="<?php echo base_url(); ?>personal-data">Согласие на обработку персональных данных</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>policy">Политика в отношении обработки<br>персональных данных пользователей</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>personal-data">Согласие на обработку персональных данных<br>в целях получения рекламных сообщений</a></p>
             <p><a class="txt" href="<?php echo base_url(); ?>public-offer">Публична оферта</a></p>
-            <p><a class="txt" href="<?php echo base_url(); ?>personal-data-policy">Политика в отношении<br>обработки персональных данных</a></p>
+            <p><a class="txt" href="<?php echo base_url(); ?>personal-data-policy">Согласие на обработку<br>персональных данных пользователей</a></p>
             <p><a class="txt" href="<?php echo base_url(); ?>cookie">Политика использования файлов cookie</a></p>
             <p style="margin-top: 8px">
                 <a target="_blank" href="https://apps.apple.com/us/app/%D1%81%D0%B0%D0%BB%D0%BE%D0%BD-%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0/id6467411376">
